@@ -21,8 +21,9 @@ ar1<-function(s,r,n){
   }										
   return(covmat)													
 }													
-
-library(mnormt)
+   if (!is.installed("mnormt")){
+         install.packages("mnormt")
+     }
 
 #Homogeneous Multivariate Normal Case
 
